@@ -1,0 +1,15 @@
+---
+title: "3340 Final"
+author: "Eric Reich, Zheng Ge"
+date: "25/11/2020"
+output: pdf_document
+---
+
+```{r}
+car.dekho=read.csv("https://raw.githubusercontent.com/eric-reich-dal/3340-Final-Data/main/CAR%20DETAILS%20FROM%20CAR%20DEKHO.csv?token=ARMAMDMBMBI7KSYCMMVG6X27XX3LM")
+
+car.v3=read.csv("https://raw.githubusercontent.com/eric-reich-dal/3340-Final-Data/main/Car%20details%20v3.csv?token=ARMAMDL25I4ME4AJA6JGNG27XX3VK")
+
+car.data=read.csv("https://raw.githubusercontent.com/eric-reich-dal/3340-Final-Data/main/car%20data.csv?token=ARMAMDIE7DOACRKDWABFGUK7XX3SG")
+```
+
