@@ -8,16 +8,14 @@ output: pdf_document
 ```{r}
 car.dekho=read.csv("https://raw.githubusercontent.com/eric-reich-dal/3340-Final-Data/main/CAR%20DETAILS%20FROM%20CAR%20DEKHO.csv?token=ARMAMDMBMBI7KSYCMMVG6X27XX3LM")
 
-car.v3=read.csv("https://raw.githubusercontent.com/eric-reich-dal/3340-Final-Data/main/Car%20details%20v3.csv?token=ARMAMDL25I4ME4AJA6JGNG27XX3VK")
-
-car.data=read.csv("https://raw.githubusercontent.com/eric-reich-dal/3340-Final-Data/main/car%20data.csv?token=ARMAMDIE7DOACRKDWABFGUK7XX3SG")
 ```
 
 ```{r}
 y=car.dekho$selling_price
 x.year=car.dekho$year
 x.km=car.dekho$km_driven
-x.fuel=car.dekho$fuel
+x.fuel.p=ifelse(car.dekho$fuel=="Petrol",1,0)
+x.fuel.d=ifelse(car.dekho$fuel=="Diesel",1,0)
 x.sell.i=ifelse(car.dekho$seller_type=="Individual",1,0) #Individual = 1, Dealer and trustmark Dealer = 0
 x.sell.d=ifelse(car.dekho$seller_type=="Dealer",1,0)  #Dealer = 1, Individual and trustmaek Dealer = 0
 x.tran=ifelse(car.dekho$transmission=="Manual",1,0)  #Manual = 1, Automatic = 0
@@ -25,7 +23,23 @@ x.1.own=ifelse(car.dekho$owner=="First Owner",1,0)  #1st Owner = 1, 2nd, 3rd and
 x.2.own=ifelse(car.dekho$owner=="Second Owner",1,0)  #2nd Owner = 1, 1st, 3rd and test drive = 0
 x.3.own=ifelse(car.dekho$owner=="Third Owner",1,0)  #3rd Owner = 1, 2nd, 3rd and test drive = 0
 
-X=cbind(x.year,y,x.km,x.fuel,x.sell.i,x.sell.d,x.tran,x.1.own,x.2.own,x.3.own)
 
-X
+X=data.frame(y,x.year,x.km,x.fuel.p,x.fuel.d,x.sell.i,x.sell.d,x.tran,x.1.own,x.2.own,x.3.own)
+
+Newdata=c(8000000,1989,500000,1,0,0,1,1,0,0,1) 
+#added new data point Price = 150000, year = 1989, KM driven = 500000, fuel type = Petrol, Seller type = Individual, Transmission = Manual,  Owner = 3rd. 
+
+#I chose this because there is already expensive outliers from new, high end cars, so I made an expensive old car with bad km driven to mess with the leaverage.My thought process in the car is a old beater but looks like a car from a famous movie or was a well known car for the way in looked and has changed hands/been used a lot, but is still worth a lot of money.  
+
+
+X=rbind(X, Newdata)
+```
+
+
+
+```{r}
+lm.car=lm(y~., data=X)
+summary(lm.car)
+plot(lm.car)
+
 ```
