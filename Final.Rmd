@@ -13,3 +13,19 @@ car.v3=read.csv("https://raw.githubusercontent.com/eric-reich-dal/3340-Final-Dat
 car.data=read.csv("https://raw.githubusercontent.com/eric-reich-dal/3340-Final-Data/main/car%20data.csv?token=ARMAMDIE7DOACRKDWABFGUK7XX3SG")
 ```
 
+```{r}
+y=car.dekho$selling_price
+x.year=car.dekho$year
+x.km=car.dekho$km_driven
+x.fuel=car.dekho$fuel
+x.sell.i=ifelse(car.dekho$seller_type=="Individual",1,0) #Individual = 1, Dealer and trustmark Dealer = 0
+x.sell.d=ifelse(car.dekho$seller_type=="Dealer",1,0)  #Dealer = 1, Individual and trustmaek Dealer = 0
+x.tran=ifelse(car.dekho$transmission=="Manual",1,0)  #Manual = 1, Automatic = 0
+x.1.own=ifelse(car.dekho$owner=="First Owner",1,0)  #1st Owner = 1, 2nd, 3rd and test drive = 0
+x.2.own=ifelse(car.dekho$owner=="Second Owner",1,0)  #2nd Owner = 1, 1st, 3rd and test drive = 0
+x.3.own=ifelse(car.dekho$owner=="Third Owner",1,0)  #3rd Owner = 1, 2nd, 3rd and test drive = 0
+
+X=cbind(x.year,y,x.km,x.fuel,x.sell.i,x.sell.d,x.tran,x.1.own,x.2.own,x.3.own)
+
+X
+```
