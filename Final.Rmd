@@ -26,8 +26,8 @@ x.3.own=ifelse(car.dekho$owner=="Third Owner",1,0)  #3rd Owner = 1, 2nd, 3rd and
 
 X=data.frame(y,x.year,x.km,x.fuel.p,x.fuel.d,x.sell.i,x.sell.d,x.tran,x.1.own,x.2.own,x.3.own)
 
-Newdata=c(8000000,1989,500000,1,0,0,1,1,0,0,1) 
-#added new data point Price = 150000, year = 1989, KM driven = 500000, fuel type = Petrol, Seller type = Individual, Transmission = Manual,  Owner = 3rd. 
+Newdata=c(8000000,1989,500000,1,0,1,0,1,0,0,1) 
+#added new data point Price = 8000000, year = 1989, KM driven = 500000, fuel type = Petrol, Seller type = Individual, Transmission = Manual,  Owner = 3rd. 
 
 #I chose this because there is already expensive outliers from new, high end cars, so I made an expensive old car with bad km driven to mess with the leaverage.My thought process in the car is a old beater but looks like a car from a famous movie or was a well known car for the way in looked and has changed hands/been used a lot, but is still worth a lot of money.  
 
