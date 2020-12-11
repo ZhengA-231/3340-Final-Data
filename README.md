@@ -50,7 +50,7 @@ Figure 6  Transmission (0=Automatic, 1=Manual) vs Selling Price (Indian Lakhs)
 
 Figure 7  Number of Owners (0= 0 Owners, 1=1 Owner, 2=3 Owners) vs Selling Price (Indian Lakhs)
 
-![alt text](000003(1).png)
+![alt text](5.png)
 
 ![alt text](000008.png)
 
