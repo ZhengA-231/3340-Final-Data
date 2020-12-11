@@ -1,1 +1,9 @@
 # 3340-Final-Data
+![alt text](000003.png)
+![alt text](000017.png)
+![alt text](000019.png)
+![alt text](00001b.png)
+![alt text](00001d.png)
+![alt text](000021.png)
+![alt text](00001f.png)
+![alt text](000023.png)
