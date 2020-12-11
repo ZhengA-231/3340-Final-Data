@@ -1,7 +1,13 @@
 # 3340 Final Project
 Eric Reich, 
 
+# Abstract 
+
 # Introduction
+
+# Methods
+
+# Results 
 
 ![alt text](000017.png)
 
@@ -41,3 +47,5 @@ Figure 6  Transmission (0=Automatic, 1=Manual) vs Selling Price (Indian Lakhs)
 ![alt text](000023.png)
 
 Figure 7  Number of Owners (0= 0 Owners, 1=1 Owner, 2=3 Owners) vs Selling Price (Indian Lakhs)
+
+# Conclusion
