@@ -1,4 +1,7 @@
-# 3340-Final-Data
+# 3340 Final Project
+Eric Reich, 
+
+# Introduction
 
 ![alt text](000017.png)
 
