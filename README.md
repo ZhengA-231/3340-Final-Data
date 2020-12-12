@@ -11,6 +11,11 @@ Three data files, describing car data taken from CarDekho.com were obtained from
 
 # Results 
 
+Based on the plots there doesn't seem to be strong evidence of multicolinearity. Though logoically I think there are interactions between km driven, year and number of owners. VIF for model with dummy variables fuel and owner variables appear to be multicolinear, but when dummy variable are combined, multicolinearity dissapears.
+
+A srong correlation between 
+
+
 ![alt text](000017.png)
 
 Figure 1  Presentation Price (Indian Lakhs) vs Selling Price (Indian Lakhs)
@@ -52,7 +57,11 @@ Figure 7  Number of Owners (0= 0 Owners, 1=1 Owner, 2=3 Owners) vs Selling Price
 
 ![alt text](5.png)
 
+Figure 8  Fitted values of full model (y~) vs Residuals
+
 ![alt text](000008.png)
+
+Figure 9  Fitted values of ln transformed full model vs Residuals
 
 # Conclusion
 
