@@ -98,7 +98,7 @@ Figure 9  Fitted values of ln transformed full model vs Residuals
 
 The stepwise model produced formula:
 
-ln.y = -1.63854*Sell type + 0.05931 * Presentation price + 0.11249 * Year + -0.14385 * Fuel type + 0.15892 * Number of owners
+ln.y = -225.2121 + -1.63854*Sell type + 0.05931 * Presentation price + 0.11249 * Year + -0.14385 * Fuel type + 0.15892 * Number of owners
 
 Km driven and transmission type were removed from the model. 15 models produced adjusted R^2 of greater than 0.88 (Figure 10). All of these models included year and presentation price (figure 10). The most removed variable in models with high adjusted R^2 was fuel (figure 10).
 
