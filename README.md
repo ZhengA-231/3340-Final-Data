@@ -13,19 +13,24 @@ Three data files, describing car data taken from CarDekho.com were obtained from
 
 Based on the plots there doesn't seem to be strong evidence of multicolinearity. Though logoically I think there are interactions between km driven, year and number of owners. VIF for model with dummy variables fuel and owner variables appear to be multicolinear, but when dummy variable are combined, multicolinearity dissapears.
 
-A srong correlation between 
+A srong correlation between presentation price and selling price was observered (Figure 1). Three points appear to be potential outliers, with one of these points significantly higher presentation price than the rest (figure 1). 
 
 
-![alt text](000017.png)
+![alt text](000017.png) 
 
 Figure 1  Presentation Price (Indian Lakhs) vs Selling Price (Indian Lakhs)
 
 
+There appears to be a positive relationship between year and price, though there are two significant outliers at year 2010 and 2003 (figure 2). there appears to be representives of each year at multiples price ranges at an increasing rate as year increases (figure 2) 
+
 
 ![alt text](000019.png)
 
+
 Figure 2  Year vs Selling Price (Indian Lakhs)
 
+
+There doesn not appear to be a correlation between Kilometers driven and selling price (figure 3). There are 2 noticable outliers (figure 3)
 
 
 ![alt text](00001b.png)
@@ -33,11 +38,15 @@ Figure 2  Year vs Selling Price (Indian Lakhs)
 Figure 3  Kilometers Driven vs Selling Price (Indian Lakhs)
 
 
+Fuel type CNG appears cheaper than the other fuels but has very few representitives (figure 4). Deisel appers to generally have a higher price than petrol (figure 4)
+
 
 ![alt text](00001d.png)
 
 Figure 4  Fuel Type (0=CNG, 1=Deisel, 2=Petrol) vs Selling Price (Indian Lakhs)
 
+
+The dealer seller type appears to sell more cars and at a generally higher price than individuals (figure 5). There appears to be 1 significant outlier in individual category (fiugure 5)
 
 
 ![alt text](000021.png)
@@ -45,23 +54,42 @@ Figure 4  Fuel Type (0=CNG, 1=Deisel, 2=Petrol) vs Selling Price (Indian Lakhs)
 Figure 5  Seller Type (0=Dealer, 1=Individual) vs Selling Price (Indian Lakhs)
 
 
+Transmission does not appear to have significant differences between Automatic and Manual, through manual is more concentrated at a lower price with a few outliers, while automatic appears more spread out (figure 6)
+
+
 ![alt text](00001f.png)
 
 Figure 6  Transmission (0=Automatic, 1=Manual) vs Selling Price (Indian Lakhs)
 
+
+0 owners appears to have higher selling price in general though there are representitives at a wide range (figure 7). 1 owner appears lower and with less data and 3 owners appears to be two extremes with only a few data points (figure 7) 
 
 
 ![alt text](000023.png)
 
 Figure 7  Number of Owners (0= 0 Owners, 1=1 Owner, 2=3 Owners) vs Selling Price (Indian Lakhs)
 
+After the initial fit of the model, high f statistic and low p vaue showed that the variables have significant affect on selling price, given every variable is included in the model. The t test of KM drivin resulted in high p value, implying this variable may be insignificant. Other variables appeared to be significant in the model, based on t test. points 302, 86 and 87 were noticed as influence points. 
+
+A fanning effect is noted, implying non constant variance amongst residual (figure 8).
+
 ![alt text](5.png)
 
 Figure 8  Fitted values of full model (y~) vs Residuals
 
+After transforming selling price to ln selling price, ther significance of the variables were similar to the original model, except for transmission. the p value of transmission changed from significant at 0.01 to not significant at 0.618. After transformation, Influence points 86 and 302 no longer appeared at such, though point 87 reamained as an influence point. 
+
+The fanning effect seen in figure 8 is not present, and the data appears more random, though outliers are noticable at point 87 (figure 9). 
+
 ![alt text](000008.png)
 
 Figure 9  Fitted values of ln transformed full model vs Residuals
+
+The stepwise model produced formula:
+
+ln.y = -1.63854*Sell type + 0.05931 * Presentation price + 0.11249 * Year + -0.14385 * Fuel type + 0.15892 * Number of owners
+
+
 
 # Conclusion
 
