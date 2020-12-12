@@ -3,7 +3,7 @@ Eric Reich, Zheng Ge
 
 # Abstract 
 
-The objective of the study is to understand create linear model that is able to accurately predict the selling price of cars using a set of variables. Data from car.dekho.com was analyzed an fit to a regression model to acertain the validity of the model. The statistically significant variables were discovered and the model was tranformed and then variables were chosen to create a more accurate model. The best model was found to be ln.y = -1.63854*Sell type + 0.05931 * Presentation price + 0.11249 * Year + -0.14385 * Fuel type + 0.15892 * Number of owner, though multiple models seemed to be effective predicors of selling price. It was found that Km driven should be removed from the model chosen. Transmission, fuel type and seller type may be removed without significantly affecting the model, though fuel type and seller type were found to have greater reasoning for being kept in the model. 
+The objective of the study is to understand create linear model that is able to accurately predict the selling price of cars using a set of variables. Data from car.dekho.com was analyzed an fit to a regression model to acertain the validity of the model. The statistically significant variables were discovered and the model was tranformed and then variables were chosen to create a more accurate model. The best model was found to be ln.y = -229.4 + -1.69*Seller type + 0.05212 * Presentation price + 0.1152 * Year + -0.4312 * Desel Fuel type + 0.2009 * Petrol Fuel type + -1.913 * 1 owner + -1.648 * 0 owner, though multiple models seemed to be effective predicors of selling price. It was found that Km driven should be removed from the model chosen. Transmission, fuel type and seller type may be removed without significantly affecting the model, though fuel type and seller type were found to have greater reasoning for being kept in the model. 
 
 # Introduction
 
@@ -98,7 +98,7 @@ Figure 9  Fitted values of ln transformed full model vs Residuals
 
 The stepwise model produced formula:
 
-ln.y = -225.2121 + -1.63854*Sell type + 0.05931 * Presentation price + 0.11249 * Year + -0.14385 * Fuel type + 0.15892 * Number of owners
+ln.y = -229.4 + -1.69*Seller type + 0.05212 * Presentation price + 0.1152 * Year + -0.4312 * Desel Fuel type + 0.2009 * Petrol Fuel type + -1.913 * 1 owner + -1.648 * 0 owner
 
 Km driven and transmission type were removed from the model. 15 models produced adjusted R^2 of greater than 0.88 (Figure 10). All of these models included year and presentation price (figure 10). The most removed variable in models with high adjusted R^2 was fuel (figure 10).
 
@@ -126,7 +126,7 @@ Figure 10  Adjusted R^2 compared to Variables removed from model,
 
 # Conclusion
 
-Based on the stepwise comparison and adjusted R2 of every possible model, presenting price and year are necessary variables within the final model. The models with the highest adjusted R2 all had these variables in the model signifying their importance. The correlation could be seen visually between these two variables and selling type (figure 1; figure 2) This falls in line with what the prediction that these two variable would be significant.
+Based on the stepwise comparison and adjusted R2 of every possible model, presenting price and year are necessary variables within the final model. The models with the highest adjusted R2 all had these variables in the model signifying their importance. The correlation could be seen visually between these two variables and selling type (figure 1; figure 2) This falls in line with what the prediction that these two variable would be significant. Though higher coefficient within the finished model was expected. 
 
 Seller type also had significance in the model. It was found that it costs more to purchase from dealers rather than individuals (figure 5). This would make sense, as dealers often purchase cars from individuals and increase the price to turn a profit. Dealers would also have workers trained to sell, potentially increasing the selling price of vehicles sold. Experience in car sales of individuals seems less likely. 
 
@@ -142,7 +142,7 @@ The affect of influence of point 87 was also analyzed to see if it had any affec
 
 Possible points of error could be found in the lack of variables available for the model. Car prices often reflect the technologies incorporated into the vehicle, while this may be absorbed by the newness of the vehicle in years, it is apparent that cars from the same year may have drastically different add-ons affecting their cost. This model also does not include the brand which would potentially have significant affect on price of cars with similar attributes. Another point of error is my personal lack of car knowledge. The logical arguements used were based on my understanding from looking through Car.Dekho.com, as well as a small amount of previous knowledge. 
 
-In conclusion, the model we found to best fit the data was ln.y = -1.63854*Sell type + 0.05931 * Presentation price + 0.11249 * Year + -0.14385 * Fuel type + 0.15892 * Number of owners. However, based on the data as well as what we know about the price of cars, multiple models seemed to be effective predicors of selling price. 
+In conclusion, the model we found to best fit the data was ln.y = -229.4 + -1.69*Seller type + 0.05212 * Presentation price + 0.1152 * Year + -0.4312 * Desel Fuel type + 0.2009 * Petrol Fuel type + -1.913 * 1 owner + -1.648 * 0 owners. However, based on the data as well as what we know about the price of cars, multiple models seemed to be effective predicors of selling price. 
 
 # Appendix 
 [Car Data CSV](https://github.com/eric-reich-dal/3340-Final-Data/blob/main/car%20data.csv)
