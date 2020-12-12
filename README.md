@@ -146,5 +146,6 @@ In conclusion, the model we found to best fit the data was ln.y = -1.63854*Sell 
 
 # Appendix 
 [Car Data CSV](https://github.com/eric-reich-dal/3340-Final-Data/blob/main/car%20data.csv)
+
 [Car Data R Markdown](https://github.com/eric-reich-dal/3340-Final-Data/edit/main/Final_cardata.Rmd)
 
