@@ -131,4 +131,5 @@ The affect of influence of point 87 was also analyzed to see if it had any affec
 Possible points of error could be found in the lack of variables available for the model. Car prices often reflect the technologies incorporated into the vehicle, while this may be absorbed by the newness of the vehicle in years, it is apparent that cars from the same year may have drastically different add-ons affecting their cost. This model also does not include the brand which would potentially have significant affect on price of cars with similar attributes.
 
 # Appendix 
-[Car Data](car data.csv)
+[Car Data](https://github.com/eric-reich-dal/3340-Final-Data/blob/main/car%20data.csv) - Car data CSV file used for this anlysis
+
