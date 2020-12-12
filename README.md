@@ -3,7 +3,7 @@ Eric Reich, Zheng Ge
 
 # Abstract 
 
-The objective of the study is to understand create linear model that is able to accurately predict the selling price of cars using a set of variables. Data from car.dekho.com was analyzed an fit to a regression model to acertain the validity of the model. The statistically significant variables were discovered and the model was tranformed and then variables were chosen to create a more accurate model. The best model was found to be ln.y = -1.63854*Sell type + 0.05931 * Presentation price + 0.11249 * Year + -0.14385 * Fuel type + 0.15892 * Number of owner, though multiple models seemed to be effective predicors of selling price. 
+The objective of the study is to understand create linear model that is able to accurately predict the selling price of cars using a set of variables. Data from car.dekho.com was analyzed an fit to a regression model to acertain the validity of the model. The statistically significant variables were discovered and the model was tranformed and then variables were chosen to create a more accurate model. The best model was found to be ln.y = -1.63854*Sell type + 0.05931 * Presentation price + 0.11249 * Year + -0.14385 * Fuel type + 0.15892 * Number of owner, though multiple models seemed to be effective predicors of selling price. It was found that Km driven should be removed from the model chosen. Transmission, fuel type and seller type may be removed without significantly affecting the model, though fuel type and seller type were found to have greater reasoning for being kept in the model. 
 
 # Introduction
 
@@ -140,10 +140,11 @@ In the stepwise model, transmission was not included, though it was included in 
 
 The affect of influence of point 87 was also analyzed to see if it had any affect on which variables were removed from the model. Point 87 is a land cruiser, which are expensive vehicles. The results implied that point including point 87 resulted in decreased adjusted R^2 but did not affect the variables found within the model. It is recommended that point 87 remain in the model. 
 
+Possible points of error could be found in the lack of variables available for the model. Car prices often reflect the technologies incorporated into the vehicle, while this may be absorbed by the newness of the vehicle in years, it is apparent that cars from the same year may have drastically different add-ons affecting their cost. This model also does not include the brand which would potentially have significant affect on price of cars with similar attributes. Another point of error is my personal lack of car knowledge. The logical arguements used were based on my understanding from looking through Car.Dekho.com, as well as a small amount of previous knowledge. 
+
 In conclusion, the model we found to best fit the data was ln.y = -1.63854*Sell type + 0.05931 * Presentation price + 0.11249 * Year + -0.14385 * Fuel type + 0.15892 * Number of owners. However, based on the data as well as what we know about the price of cars, multiple models seemed to be effective predicors of selling price. 
 
-Possible points of error could be found in the lack of variables available for the model. Car prices often reflect the technologies incorporated into the vehicle, while this may be absorbed by the newness of the vehicle in years, it is apparent that cars from the same year may have drastically different add-ons affecting their cost. This model also does not include the brand which would potentially have significant affect on price of cars with similar attributes.
-
 # Appendix 
-[Car Data](https://github.com/eric-reich-dal/3340-Final-Data/blob/main/car%20data.csv) - Car data CSV file used for this anlysis
+[Car Data CSV](https://github.com/eric-reich-dal/3340-Final-Data/blob/main/car%20data.csv)
+[Car Data R Markdown](https://github.com/eric-reich-dal/3340-Final-Data/edit/main/Final_cardata.Rmd)
 
