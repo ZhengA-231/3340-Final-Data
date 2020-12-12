@@ -1,7 +1,9 @@
 # 3340 Final Project
-Eric Reich 
+Eric Reich, Zheng Ge 
 
 # Abstract 
+
+The objective of the study is to understand the operation of R markdown github and regression analysis. Regression is commonly used statistical tool to understand how far one or more variables are influencing another variable called dependent variables the data set Cars Data has been provided by the University. In the data preparation the addition of dummy variables and calculated fields are included. Regression analysis can be done with some iterations and finally it was fitted to the model.  In the model  the statistically significant variables are  year, selling price and present price. The R square value in this case was 88.26%. the value of R square is an important indicator to understand the regression analysis.  It can be said that the model is able to explain the dependent variable 88.26% with thecurrent independent variables.  
 
 # Introduction
 
