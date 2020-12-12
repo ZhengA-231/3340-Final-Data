@@ -284,7 +284,8 @@ c(18,l$which[18,])
 
 ```
 ```{r}
-step.model=lm(ln.y~x.sell.i + x.pres + x.year + x.fuel.d +  x.1.own + x.N.own)
+#fit the 'final' model and review. 
+step.model=lm(ln.y~x.sell.i + x.pres + x.year + x.fuel.d +x.fuel.p+  x.1.own + x.N.own)
 
 summary(step.model)
 
